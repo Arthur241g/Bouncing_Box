@@ -2,18 +2,18 @@
 ***
 
 ## Task
-TODO - What is the problem? And where is the challenge?
+The problem are the resolve the challenge of move a box in every-directions.
 
 ## Description
-TODO - How have you solved the problem?
+i have solved the problem in using different fonctions like bounce.style
 
 ## Installation
-TODO - How to install your project? npm install? make? make re?
+i dowload the package of this application inline
 
 ## Usage
 TODO - How does it work?
 ```
-./my_project argument1 argument2
+./my_project index.html
 ```
 
 ### The Core Team
