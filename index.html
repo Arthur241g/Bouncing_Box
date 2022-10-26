@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html style = "background-color: black;">
+    <div id = "my_bouncing_box" style = "background-color: blue; border-radius: 3px; position:absolute; left 0px; top: 0px; min-width: 100px; min-height: 100px; text-align: center; font-weight: bold; color: #999;">kevin-ar_e</div>
+    <script type = "text/javascript">
+
+        let bounce = document.getElementById("my_bouncing_box");
+        bounce.style.minWidth = "100px";
+        bounce.style.minHeight = "100px";
+        bounce.style.borderRadius = "3px";
+        bounce.style.textAlign = "center";
+        bounce.style.color = "#999";
+        bounce.style.position = "absolute";
+
+        
+        let x_cord = 0.3;
+        let y_cord = 0.3;
+        let x_speed = 2;
+        let y_speed = 2;
+       
+
+        const move = () => {
+            bounce.style.left = x_cord + "px";
+            bounce.style.top = y_cord + "px";
+        }
+
+        setInterval(()=> {
+            if (x_cord + bounce.clientWidth >= window.innerWidth){
+                x_speed = - x_speed;
+            }
+            if (y_cord + bounce.clientWidth >= window.innerHeight){
+                y_speed = - y_speed;
+            }
+            if (x_cord <= 0){
+                x_speed = - x_speed;
+            }
+            if (y_cord <= 0){
+                y_speed = - y_speed;
+            }
+            x_cord += x_speed;
+            y_cord += y_speed
+            move(); 
+        }, 1000/90);
+        
+      
+    </script>
+</html>
